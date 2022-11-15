@@ -45,7 +45,7 @@
                     <div class="container">
                         <div class="row justify-content-center">
                             <div class="col-md-8">
-                                <div class="card">
+                                <div class="card" style="border-radius: 20px">
                                     <div class="container-fluid page-header mb-5">
                                     </div>
                                     <div class="d-flex flex-column text-center mb-5 ">

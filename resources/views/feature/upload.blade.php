@@ -49,19 +49,19 @@
                     <div id="success"></div>
                     <form name="sentMessage" id="contactForm" novalidate="novalidate">
                         <div class="control-group">
-                            <input type="text" class="form-control" id="code" placeholder="Unique Code" required="required" data-validation-required-message="Please enter your Video Code" />
+                            <input style="border-radius: 7px" type="text" class="form-control" id="code" placeholder="Unique Code" required="required" data-validation-required-message="Please enter your Video Code" />
                             <p class="help-block text-danger"></p>
                         </div>
                         <div class="control-group">
-                            <input type="text" class="form-control" id="link" placeholder="Video Link" required="required" data-validation-required-message="Please enter your Video Link" />
+                            <input  style="border-radius: 7px" type="text" class="form-control" id="link" placeholder="Video Link" required="required" data-validation-required-message="Please enter your Video Link" />
                             <p class="help-block text-danger"></p>
                         </div>
                         <div class="control-group">
-                            <input type="file" class="form-control" id="thumbnail" placeholder="thumbnail" required="required" data-validation-required-message="Please Select your Thumbanail" />
+                            <input style="border-radius: 7px" type="file" class="form-control" id="thumbnail" placeholder="thumbnail" required="required" data-validation-required-message="Please Select your Thumbanail" />
                             <p class="help-block text-danger"></p>
                         </div>
                         <div>
-                            <button class="btn btn-outline-primary" type="submit" id="sendMessageButton">Upload</button>
+                            <button style="border-radius: 7px" class="btn btn-outline-primary" type="submit" id="sendMessageButton">Upload</button>
                         </div>
                     </form>
                 </div>

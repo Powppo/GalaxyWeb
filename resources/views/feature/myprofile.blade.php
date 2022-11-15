@@ -20,7 +20,7 @@
                 <p class="mb-0 text-primary font-weight-bold">Name</p>
               </div>
               <div class="col-sm-9">
-                <p class="text-black mb-0 font-weight-bold">{{$item['name']}}</p>
+                <p class="mb-0">{{$item['name']}}</p>
               </div>
             </div>
             <hr>
@@ -29,7 +29,7 @@
                 <p class="mb-0 text-primary font-weight-bold">Address</p>
               </div>
               <div class="col-sm-9">
-                <p class="text-black mb-0 font-weight-bold">{{$item['address']}}</p>
+                <p class="mb-0">{{$item['address']}}</p>
               </div>
             </div>
             <hr>
@@ -38,7 +38,7 @@
                 <p class="mb-0 text-primary font-weight-bold">Contact</p>
               </div>
               <div class="col-sm-9">
-                <p class="text-black mb-0 font-weight-bold">{{$item['contact']}}</p>
+                <p class="mb-0">{{$item['contact']}}</p>
               </div>
             </div>
             <hr>
@@ -47,7 +47,7 @@
                 <p class="mb-0 text-primary font-weight-bold">Email Address</p>
               </div>
               <div class="col-sm-9">
-                <p class="text-black mb-0 font-weight-bold">{{$item['email']}}</p>
+                <p class="mb-0">{{$item['email']}}</p>
               </div>
             </div>
         </div>
@@ -57,7 +57,7 @@
     <div class="row mb-0">
         <div class="col-md-8 offset-md-2">
             <div class="row justify-content-center">
-                <button class="btn btn-outline-primary" type="submit" id="edit">Edit</button>
+                <button class="btn btn-outline-primary" type="submit" id="edit" style="border-radius: 7px">Edit</button>
             </div>
         </div>
     </div>

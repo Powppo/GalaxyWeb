@@ -27,7 +27,8 @@
                 <div class="carousel-item active">
                     <img class="w-100" src="{{asset('img/home.jpg')}}" alt="Image">
                     <div class="carousel-caption d-flex flex-column align-items-center justify-content-center">
-                        <h2 class="display-2 m-0 mt-2 mt-md-4 text-white font-weight-bold text-capitalize">Welcome, {{ Auth::user()->name,}}</h2>
+                        <h2 class="display-2 m-0 mt-2 mt-md-4 text-white font-weight-bold text-capitalize">Welcome to Galaxy,</h2>
+                        <h2 class="display-4 m-0 mt-2 mt-md-4 text-black font-weight-bold text-capitalize" class="text-black">{{ Auth::user()->name,}} !</h2>
                         <a href="{{asset('Template/')}}" class="btn btn-lg btn-outline-light mt-3 mt-md-5 py-md-3 px-md-5">Join Us Now</a>
                     </div>
                 </div>

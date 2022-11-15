@@ -2,6 +2,10 @@
 
 use Illuminate\Support\Facades\Route;
 use App\http\Controllers\FeatureController;
+use App\http\Controllers\HomeController;
+use Illuminate\Support\Facades\Input;
+use Illuminate\Support\Facades\Routes;
+use App\User;
 
 
 /*
@@ -21,6 +25,7 @@ Route::get('/', function () {
 
 Auth::routes();
 
+Route::post('/index', [HomeController::class, 'upload']);
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
 Route::get('/index', [FeatureController::class, 'index']);
 Route::get('/myprofile', [FeatureController::class, 'myprofile']);
