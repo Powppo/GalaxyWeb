@@ -3,6 +3,7 @@
 use Illuminate\Support\Facades\Route;
 use App\http\Controllers\FeatureController;
 use App\http\Controllers\HomeController;
+use App\http\Controllers\contactusController;
 use Illuminate\Support\Facades\Input;
 use Illuminate\Support\Facades\Routes;
 use App\User;
@@ -33,3 +34,4 @@ Route::get('/tam', [FeatureController::class, 'tam']);
 Route::get('/upload', [FeatureController::class, 'upload']);
 Route::get('/expoint', [FeatureController::class, 'expoint']);
 Route::get('/contact', [FeatureController::class, 'contact']);
+Route::post('/home', [App\Http\Controllers\FeatureController::class, 'storeContact'])->name('storeContact');

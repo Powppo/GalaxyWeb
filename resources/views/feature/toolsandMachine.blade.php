@@ -56,7 +56,6 @@
                                     </div>
                                         <div class="d-flex flex-column text-center mb-5">
                                             <h4 class="text-primary font-weight-bold">Treadmill (Example)</h4>
-                                            <br>
                                             <p class="m-0 text-white"><a class="text-black" href="">Link 1</a></p>
                                             <p class="m-0 text-white"><a class="text-black" href="">Link 2</a></p>
                                             <p class="m-0 text-white"><a class="text-black" href="">Link 3</a></p>
