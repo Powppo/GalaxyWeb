@@ -50,6 +50,15 @@
                 <p class="mb-0">{{$item['email']}}</p>
               </div>
             </div>
+            <hr>
+            <div class="row">
+              <div class="col-sm-3">
+                <p class="mb-0 text-primary font-weight-bold">Role</p>
+              </div>
+              <div class="col-sm-9">
+                <p class="mb-0">{{$item['role']}}</p>
+              </div>
+            </div>
         </div>
     @endforeach
 </div>

@@ -40,6 +40,17 @@
                 <div class="card-body">
                     <form method="POST" action="{{ route('register') }}">
                         @csrf
+                        
+                        <div class="row mb-3">
+                            <label for="password-confirm" class="col-md-4 col-form-label text-md-end">{{ __('Role') }}</label>
+
+                            <div class="col-md-6">
+                                <select style="border-radius: 7px" id="role" class="form-select" name="role" required autocomplete="new-password">
+                                        <option>Beginner</option>
+                                        <option>Advance</option>
+                                </select>
+                            </div>
+                        </div>
 
                         <div class="row mb-3">
                             <label for="name" class="col-md-4 col-form-label text-md-end">{{ __('Username') }}</label>
@@ -84,7 +95,7 @@
                         </div>
                         
                         <div class="row mb-3">
-                            <label for="email" class="col-md-4 col-form-label text-md-end">{{ __('Email Address') }}</label>
+                            <label for="email" class="col-md-4 col-form-label text-md-end">{{ __('Email') }}</label>
 
                             <div class="col-md-6">
                                 <input style="border-radius: 7px" id="email" type="email" class="form-control @error('email') is-invalid @enderror" name="email" value="{{ old('email') }}" required autocomplete="email">
@@ -120,7 +131,7 @@
                         </div>
 
                         <div class="row mb-3">
-                            <label for="image" class="col-md-4 col-form-label text-md-end">{{ __('Profile Picturez') }}</label>
+                            <label for="image" class="col-md-4 col-form-label text-md-end">{{ __('Profile Pictures') }}</label>
 
                             <div class="col-md-6">
                                 <input style="border-radius: 7px" id="image" type="file" class="form-control @error('email') is-invalid @enderror" name="image" required autocomplete="image">
