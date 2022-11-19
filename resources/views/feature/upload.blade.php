@@ -47,17 +47,18 @@
             <div class="col-md-12 pb-5">
                 <div class="contact-form">
                     <div id="success"></div>
-                    <form name="sentMessage" id="contactForm" novalidate="novalidate">
+                    <form method="POST" action="{{ route('storeUpload') }}">
+                        @csrf
                         <div class="control-group">
-                            <input style="border-radius: 7px" type="text" class="form-control" id="code" placeholder="Unique Code" required="required" data-validation-required-message="Please enter your Video Code" />
+                            <input style="border-radius: 7px" name ="code" type="text" class="form-control" id="code" placeholder="Unique Code" required="required" data-validation-required-message="Please enter your Video Code" />
                             <p class="help-block text-danger"></p>
                         </div>
                         <div class="control-group">
-                            <input  style="border-radius: 7px" type="text" class="form-control" id="link" placeholder="Video Link" required="required" data-validation-required-message="Please enter your Video Link" />
+                            <input  style="border-radius: 7px" name ="link" type="text" class="form-control" id="link" placeholder="Video Link" required="required" data-validation-required-message="Please enter your Video Link" />
                             <p class="help-block text-danger"></p>
                         </div>
                         <div class="control-group">
-                            <input style="border-radius: 7px" type="file" class="form-control" id="thumbnail" placeholder="thumbnail" required="required" data-validation-required-message="Please Select your Thumbanail" />
+                            <input style="border-radius: 7px" name ="file" type="file" class="form-control" id="thumbnail" placeholder="thumbnail" required="required" data-validation-required-message="Please Select your Thumbanail" />
                             <p class="help-block text-danger"></p>
                         </div>
                         <div>
@@ -68,6 +69,7 @@
             </div>
         </div>
     </div>
+
     <!-- Contact End -->
 
     <!-- Back to Top -->
