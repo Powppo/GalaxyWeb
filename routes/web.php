@@ -29,8 +29,12 @@ Auth::routes();
 Route::post('/index', [HomeController::class, 'upload']);
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
 Route::get('/index', [FeatureController::class, 'index']);
-Route::get('/myprofile', [FeatureController::class, 'myprofile']);
-Route::get('/editProfile', [FeatureController::class, 'editProfile'])->name('editProfile');
+
+//Profile
+Route::get('/myprofile/{id}', [FeatureController::class, 'myprofile'])->name('myProfile');
+Route::get('/editProfile/{id}', [FeatureController::class, 'editProfile'])->name('editProfile');
+Route::post('/updateProfile/{id}', [FeatureController::class, 'updateProfile'])->name('updateProfile');
+
 Route::get('/tam', [FeatureController::class, 'tam']);
 Route::get('/upload', [FeatureController::class, 'upload']);
 Route::get('/expoint', [FeatureController::class, 'expoint']);

@@ -92,9 +92,10 @@
                                 <a id="navbarDropdown" class="nav-link text-black dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false" v-pre>
                                     {{ Auth::user()->name }}
                                 </a>
-
+                                
+                                
                                 <div class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdown">
-                                    <a class="dropdown-item" href="/myprofile">My Profile</a>
+                                    <a class="dropdown-item" method="GET" href= {{ route('myProfile', Auth::user()->id) }}>My Profile</a>
                                     <a class="dropdown-item" href="{{ route('logout') }}"
                                        onclick="event.preventDefault();
                                                      document.getElementById('logout-form').submit();">

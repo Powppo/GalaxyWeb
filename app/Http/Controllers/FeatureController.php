@@ -72,14 +72,28 @@ class FeatureController extends Controller
         }
     }
 
-    public function myprofile()
+    public function myprofile($id)
     {
-        $user=User::all();
+        $user = User::findorfail($id);
         return view ('feature.myprofile', compact('user'));
     }
 
-    public function editProfile()
-    {
-        return view ('feature.editProfile');
-    }
+    //Edit Profile
+    public function editProfile($id)
+        {
+            $edit = User::findorfail($id);
+            return view('feature.editProfile', compact('edit'));
+        }
+
+        public function updateProfile (Request $request, $id)
+        {
+            $edit = User::findorfail($id);
+            $edit->update($request->all());
+            if ($edit->save())
+            {
+                return redirect('index')->with('status', 'Update Success');
+            } else {
+                return redirect('index')->with('status', 'Update Denied');
+            }
+        }
 }
