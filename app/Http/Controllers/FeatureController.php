@@ -5,7 +5,7 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use App\Models\User;
 use App\Models\contactus;
-use App\Models\upload;
+use App\Models\Upload;
 
 class FeatureController extends Controller
 {   
@@ -15,7 +15,8 @@ class FeatureController extends Controller
     }
 
     public function tam(){
-        return view('feature.toolsAndMachine');
+        $tam=Upload::all();
+        return view('feature.toolsAndMachine', compact('tam'));
     }
 
     public function upload(){
@@ -24,6 +25,10 @@ class FeatureController extends Controller
 
     public function expoint(){
         return view('feature.exchangePoint');
+    }
+
+    public function prohibited(){
+        return view('feature.prohibited');
     }
 
     public function contact(){
@@ -97,3 +102,5 @@ class FeatureController extends Controller
             }
         }
 }
+
+

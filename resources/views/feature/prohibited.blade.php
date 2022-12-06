@@ -23,23 +23,7 @@
 <body class="bg-white">
 
     <!-- Page Header Start -->
-    <div class="container-fluid page-header mb-5">
-        <div class="d-flex flex-column align-items-center justify-content-center pt-0 pt-lg-5" style="min-height: 300px">
-            <h4 class="display-4 mb-3 mt-0 mt-lg-5 text-white text-uppercase font-weight-bold">Tools and Machine</h4>
-            <div class="d-inline-flex">
-                <p class="m-0 text-white"><a class="text-white" href="">Home</a></p>
-                <p class="m-0 text-white px-2">/</p>
-                <p class="m-0 text-white">Tools and Machine</p>
-            </div>
-        </div>
-    </div>
-    <!-- Page Header End -->
-
-
-    <!-- Contact Start -->
     <div class="container pt-5">
-        
-    
         <div class="row">
             <div class="col-md-12 pb-5">
                 <div class="contact-form">
@@ -50,19 +34,25 @@
                                 <div class="card" style="border-radius: 20px">
                                     <div class="container-fluid page-header mb-5">
                                     </div>
-                                    <div class="d-flex flex-column text-center mb-5">
-                                        <h4 class="text-primary font-weight-bold">Watch our Videos</h4>
-                                        <h4 class="display-4 font-weight-bold">Select a Video link to Watch !</h4>
-                                    </div>
-                                        <div class="d-flex flex-column text-center mb-5">
-                                            <h4 class="text-primary font-weight-bold">Treadmill (Example)</h4>
-                                            <hr>
-                                            @foreach ($tam as $item)
-                                            <p class="m-0 text-black" class="nav-link">{{$item['link']}}</p>
-                                            <br>
-                                            @endforeach
-                                    <div class="card-body">
+                                    <div class="d-flex flex-column align-items-center justify-content-center pt-0 pt-lg-5">
+                                        <h2 class="text-primary">Please Login as an Advance User to access this feature!</h2>
                                         <br>
+                                        <br>
+                                        <img class="w-100" src="{{asset('img/warning2.png')}}" alt="Image" style="max-width: 60%">
+                                        <br>
+                                        <br>
+                                        <p class="m-0 text-black"><a class="text-black" href="/home">
+                                            <h3>Return to Home page?</h3>
+                                                </a>
+                                            </p>
+                                            <h4>/</h4>
+                                            <a class="text-black" method="POST" href="{{ route('logout') }}"
+                                            onclick="event.preventDefault();
+                                                document.getElementById('logout-form').submit();">
+                                                <h3 style="margin-bottom: 110px">{{ __('Do you want to Register as an Advance User?') }}</h3>   
+                                            </a>
+              
+                                    </div>
                                     </div>
                                 </div>
                             </div>
@@ -72,8 +62,6 @@
             </div>
         </div>
     </div>
-    <!-- Contact End -->
-
     <!-- Back to Top -->
     <a href="#" class="btn btn-outline-primary back-to-top"><i class="fa fa-angle-double-up"></i></a>
 
