@@ -45,4 +45,12 @@ class User extends Authenticatable
     protected $casts = [
         'email_verified_at' => 'datetime',
     ];
+
+    public function upload(){
+        return $this->belongsTo('App\Models\User');
+    }
+
+    public function contact(){
+        return $this->belongsTo('App\Models\User');
+    }
 }

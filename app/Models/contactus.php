@@ -15,4 +15,8 @@ class contactus extends Model
         'subject',
         'message',
     ];
+
+    public function user(){
+        return $this->hasMany('App\Models\User');
+    }
 }

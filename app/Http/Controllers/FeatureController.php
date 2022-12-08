@@ -6,6 +6,8 @@ use Illuminate\Http\Request;
 use App\Models\User;
 use App\Models\contactus;
 use App\Models\Upload;
+use Illuminate\support\Facades\Auth;
+use Illuminate\support\Facades\DB;
 
 class FeatureController extends Controller
 {   
@@ -16,11 +18,13 @@ class FeatureController extends Controller
 
     public function tam(){
         $tam=Upload::all();
-        return view('feature.toolsAndMachine', compact('tam'));
+        $userid = User::all();
+        return view('feature.toolsAndMachine', compact('tam', 'userid'));
     }
 
     public function upload(){
-        return view('feature.upload');
+        $userid = User::all();
+        return view('feature.upload', compact('userid'));
     }
 
     public function expoint(){
@@ -48,6 +52,7 @@ class FeatureController extends Controller
         $rev->email = $request->email;
         $rev->subject = $request->subject;
         $rev->message = $request->message;
+        $rev->user_id = Auth::id();
         if ($rev->save())
         {
             return redirect('contact')->with('status', 'Feedback Accepted');
@@ -68,6 +73,7 @@ class FeatureController extends Controller
         $upld->code = $request->code;
         $upld->link = $request->link;
         $upld->file = $request->file;
+        $upld->user_id = Auth::id();
         if ($upld->save())
         {
             return redirect('upload')->with('status', 'Upload Succeded');

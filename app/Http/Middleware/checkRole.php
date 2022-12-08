@@ -22,7 +22,7 @@ class checkRole
         }
         
         if (Auth::user()->role == 'Beginner'){
-            return redirect('prohibited');
+            return redirect('home/prohibited');
         }
     }
 }

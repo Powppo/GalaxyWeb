@@ -29,7 +29,7 @@ Auth::routes();
 Route::post('/index', [HomeController::class, 'upload']);
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
 Route::get('/index', [FeatureController::class, 'index']);
-Route::get('/prohibited', [FeatureController::class, 'prohibited']);
+Route::get('/home/prohibited', [FeatureController::class, 'prohibited']);
 
 //Profile
 Route::get('/myprofile/{id}', [FeatureController::class, 'myprofile'])->name('myProfile');
@@ -37,11 +37,11 @@ Route::get('/editProfile/{id}', [FeatureController::class, 'editProfile'])->name
 Route::post('/updateProfile/{id}', [FeatureController::class, 'updateProfile'])->name('updateProfile');
 
 Route::group(['middleware' => ['auth', 'checkRole:Advance']], function () {
-    Route::get('/expoint', [FeatureController::class, 'expoint']);
-    Route::get('/upload', [FeatureController::class, 'upload'])->name('upload');
+    Route::get('/home/expoint', [FeatureController::class, 'expoint']);
+    Route::get('/home/upload', [FeatureController::class, 'upload'])->name('upload');
     Route::post('/uploadx', [App\Http\Controllers\FeatureController::class, 'storeUpload'])->name('storeUpload');
 });
 
-Route::get('/tam', [FeatureController::class, 'tam'])->name('tam');
-Route::get('/contact', [FeatureController::class, 'contact'])->name('contact');
+Route::get('/toolsandmachine', [FeatureController::class, 'tam'])->name('toolsandmachine');
+Route::get('/home/contact', [FeatureController::class, 'contact'])->name('contact');
 Route::post('/contactx', [App\Http\Controllers\FeatureController::class, 'storeContact'])->name('storeContact');

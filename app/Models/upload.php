@@ -11,8 +11,13 @@ class Upload extends Model
 
     protected $fillable = [
         'code',
+        'user_id',
         'link',
         'file',
     ];
+
+    public function user(){
+        return $this->hasMany(App\Models\User);
+    }
 }
 

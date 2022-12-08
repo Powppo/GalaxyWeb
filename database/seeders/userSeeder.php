@@ -18,6 +18,8 @@ class userSeeder extends Seeder
     public function run() {   
         DB::table('users')->insert([
             'name'=>'admin',
+            'role'=>'Advance',
+            'address'=>'london',
             'email'=>'admin@admin.com',
             'password'=>'admin123',
         ]);

@@ -17,6 +17,7 @@ return new class extends Migration
             $table->id();
             $table->string('name');
             $table->string('subject');
+            $table->integer('user_id');
             $table->string('email');
             $table->string('message');
             $table->rememberToken();

@@ -78,11 +78,11 @@
 
                         @else
 
-                            <a href="/index" class="nav-link text-primary font-weight-bold">Home</a>
-                            <a method="GET" href= {{ route('tam') }}  class="nav-link text-primary font-weight-bold">Tools and Machine</a>
-                            <a href="/upload" class="nav-link text-primary font-weight-bold">Upload</a>
-                            <a href="/expoint" class="nav-link text-primary font-weight-bold">Exchange Point</a>
-                            <a href="/contact" class="nav-link text-primary font-weight-bold">Contact Us</a>
+                            <a href="/home" class="nav-link text-primary font-weight-bold">Home</a>
+                            <a method="GET" href= {{ route('toolsandmachine') }}  class="nav-link text-primary font-weight-bold">Tools and Machine</a>
+                            <a href="/home/upload" class="nav-link text-primary font-weight-bold">Upload</a>
+                            <a href="/home/expoint" class="nav-link text-primary font-weight-bold">Exchange Point</a>
+                            <a href="/home/contact" class="nav-link text-primary font-weight-bold">Contact Us</a>
 
                                 @if(Auth::user()->image)
                                     <img class="image rounded-circle" src="{{asset('/storage/images/'.Auth::user()->image)}}" alt="profile_image" style="width: 80px;height: 80px; padding: 10px; margin: 0px; ">
