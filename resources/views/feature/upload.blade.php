@@ -54,7 +54,7 @@
                             <p class="help-block text-danger"></p>
                         </div>
                         <div class="control-group">
-                            <input  style="border-radius: 7px" name ="link" type="text" class="form-control" id="link" placeholder="Video Link" required="required" data-validation-required-message="Please enter your Video Link" />
+                            <input  style="border-radius: 7px" name ="link" type="url" class="form-control" id="link" placeholder="Video URL" required="required" data-validation-required-message="Please enter your Video URL" />
                             <p class="help-block text-danger"></p>
                         </div>
                         <div class="control-group">

@@ -38,8 +38,6 @@
 
     <!-- Contact Start -->
     <div class="container pt-5">
-        
-    
         <div class="row">
             <div class="col-md-12 pb-5">
                 <div class="contact-form">
@@ -55,7 +53,7 @@
                                         <h4 class="display-4 font-weight-bold">Select a Video link to Watch !</h4>
                                     </div>
                                         <div class="d-flex flex-column text-center mb-5">
-                                            <h4 class="text-primary font-weight-bold">Treadmill (Example)</h4>
+                                            <h4 class="text-primary font-weight-bold">Videos Link</h4>
                                             <hr>
                                             @foreach ($tam as $item)
                                             <p class="m-0 text-black" class="nav-link">{{$item['link']}}</p>

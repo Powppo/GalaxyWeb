@@ -8,7 +8,7 @@
     <div class="d-flex flex-column text-center mb-5">
         <h4 class="display-4 font-weight-bold " class="text-black">My Profile</h4>
         <br>
-        <h4 class="text-primary">Edit your Profile!</h4>
+        <h4 class="text-primary">Click Edit to Customize your Profile!</h4>
         <br>
     </div>
     <div class="row justify-content-center">
