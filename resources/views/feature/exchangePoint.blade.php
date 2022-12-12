@@ -52,31 +52,47 @@
                                         <h4 class="text-primary font-weight-bold">Exchange your Points</h4>
                                         <h4 class="display-4 font-weight-bold">Select an Item to Exchange !</h4>
                                     </div>
+                                    
                                         <div class="d-flex flex-column text-center mb-5">
-                                            <div class="text-center mb-5">
-                                                <div class="d-inline-flex">
-                                                    <p class="text-primary font-weight-bold"><a class="text-black" href="">Gym Supplement</a></p>
-                                                    <p class="m-0 text-black px-2">/</p>
-                                                    <p class="m-0 text-black">100 pts</p>
+                                            <div class="row">
+                                                <div class="col-md-12 pb-5">
+                                                    <div class="contact-form">
+                                                        <div id="success"></div>
+                                                        <form method="POST" action="{{ route('storeExchange') }}">
+                                                            @csrf
+                                                            </div>
+                                                            <div class="control-group">
+                                                                <div class="text-center mb-5">
+                                                                    <div class="d-inline-flex">
+                                                                        <p class="text-primary font-weight-bold">Supplement</p>
+                                                                        <p class="m-0 text-black px-2">/</p>
+                                                                        <p class="m-0 text-black">700 pts</p>
+                                                                        <input style="border-radius: 7px" name ="item" type="hidden" value="Supplement" class="form-control" id="item"/>
+                                                                        <p class="help-block text-danger"></p>
+                                                                    </div>
+                                                                    <div>
+                                                                        <button onclick="return confirm('Are you sure to select this item?');" style="border-radius: 7px; font-size: 12px; margin-left: 10px" class="btn btn-outline-primary" type="submit" id="sendMessageButton">Select</button>
+                                                                    </div>
+                                                                </div>
+
+                                                                <div class="text-center mb-5">
+                                                                    <div class="d-inline-flex">
+                                                                        <p class="text-primary font-weight-bold">Membership</p>
+                                                                        <p class="m-0 text-black px-2">/</p>
+                                                                        <p class="m-0 text-black">1500 pts</p>
+                                                                        <input style="border-radius: 7px" name ="item" type="hidden" value="Membership" class="form-control" id="item"/>
+                                                                        <p class="help-block text-danger"></p>
+                                                                    </div>
+                                                                    <div>
+                                                                        <button style="border-radius: 7px; font-size: 12px; margin-left: 10px" class="btn btn-outline-primary" type="submit" id="sendMessageButton">Select</button>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </form>
+                                                    </div>
                                                 </div>
                                             </div>
-                                            <div class="text-center mb-5">
-                                                <div class="d-inline-flex">
-                                                    <p class="text-primary font-weight-bold"><a class="text-black" href="">Membership</a></p>
-                                                    <p class="m-0 text-black px-2">/</p>
-                                                    <p class="m-0 text-black">1500 pts</p>
-                                                </div>
-                                            </div>
-                                            <div class="text-center mb-5">
-                                                <div class="d-inline-flex">
-                                                    <p class="text-primary font-weight-bold"><a class="text-black" href="">Dumbell</a></p>
-                                                    <p class="m-0 text-black px-2">/</p>
-                                                    <p class="m-0 text-black">20 pts</p>
-                                                </div>
-                                            </div>
-                                    <div class="card-body">
-                                        <br>
-                                    </div>
+                                        </div>
                                 </div>
                             </div>
                         </div>

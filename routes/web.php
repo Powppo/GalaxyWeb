@@ -6,6 +6,7 @@ use App\http\Controllers\HomeController;
 use App\http\Controllers\contactusController;
 use Illuminate\Support\Facades\Input;
 use Illuminate\Support\Facades\Routes;
+use Illuminate\Support\Facades\Storage;
 use App\User;
 
 
@@ -40,6 +41,7 @@ Route::group(['middleware' => ['auth', 'checkRole:Advance']], function () {
     Route::get('/home/expoint', [FeatureController::class, 'expoint']);
     Route::get('/home/upload', [FeatureController::class, 'upload'])->name('upload');
     Route::post('/uploadx', [App\Http\Controllers\FeatureController::class, 'storeUpload'])->name('storeUpload');
+    Route::post('/exchange', [App\Http\Controllers\FeatureController::class, 'storeExchange'])->name('storeExchange');
 });
 
 Route::get('/toolsandmachine', [FeatureController::class, 'tam'])->name('toolsandmachine');

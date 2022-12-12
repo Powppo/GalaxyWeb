@@ -22,6 +22,7 @@ class User extends Authenticatable
         'role',
         'email',
         'address',
+        'points',
         'contact',
         'password',
         'image',
@@ -52,5 +53,9 @@ class User extends Authenticatable
 
     public function contact(){
         return $this->belongsTo('App\Models\User');
+    }
+
+    public function exchange(){
+        return $this->belongsToMany('App\Models\User');
     }
 }

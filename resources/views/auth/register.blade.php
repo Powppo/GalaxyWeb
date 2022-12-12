@@ -130,20 +130,6 @@
                             </div>
                         </div>
 
-                        <div class="row mb-3">
-                            <label for="image" class="col-md-4 col-form-label text-md-end">{{ __('Profile Pictures') }}</label>
-
-                            <div class="col-md-6">
-                                <input style="border-radius: 7px" id="image" type="file" class="form-control @error('email') is-invalid @enderror" name="image" required autocomplete="image">
-
-                                @error('image')
-                                    <span class="invalid-feedback" role="alert">
-                                        <strong>{{ $message }}</strong>
-                                    </span>
-                                @enderror
-                            </div>
-                        </div>
-
 <br>
                         <div class="row mb-0">
                             <div class="col-md-8 offset-md-2">

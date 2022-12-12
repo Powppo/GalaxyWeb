@@ -20,8 +20,9 @@ return new class extends Migration
             $table->string('address')->nullable();
             $table->string('contact')->nullable();
             $table->string('email')->unique();
+            $table->integer('points')->nullable();
             $table->timestamp('email_verified_at')->nullable();
-            $table->string('image')->default('user.png')->nullable();
+            $table->string('image')->default('user.jpeg');
             $table->string('password');
             $table->rememberToken();
             $table->timestamps();

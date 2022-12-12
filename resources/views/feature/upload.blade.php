@@ -42,7 +42,8 @@
             <h4 class="text-primary font-weight-bold">Get your Point</h4>
             <h4 class="display-4 font-weight-bold">Upload your Link Here !</h4>
         </div>
-    
+        
+        
         <div class="row">
             <div class="col-md-12 pb-5">
                 <div class="contact-form">
@@ -50,19 +51,38 @@
                     <form method="POST" action="{{ route('storeUpload') }}">
                         @csrf
                         <div class="control-group">
-                            <input style="border-radius: 7px" name ="code" type="text" class="form-control" id="code" placeholder="Unique Code" required="required" data-validation-required-message="Please enter your Video Code" />
+                            <h6>Select Video Category</h6>
+                            <select style="border-radius: 7px" name="code" id="code" class="form-select">
+                                <option>Dumbell</option>
+                                <option>Barbell</option>
+                                <option>Squat</option>
+                                <option>Yoga</option>
+                                <option>Skipping</option>
+                                <option>Treadmill</option>
+                                <option>Bench Press</option>
+                                <option>Leg Press</option>
+                                <option>Ab Roller</option>
+                                <option>Static Bike</option>
+                                <option>Lat Pulldown Machine</option>
+                            </select>
                             <p class="help-block text-danger"></p>
                         </div>
+                        </div>
                         <div class="control-group">
+                            <h6>Video URL</h6>
                             <input  style="border-radius: 7px" name ="link" type="url" class="form-control" id="link" placeholder="Video URL" required="required" data-validation-required-message="Please enter your Video URL" />
                             <p class="help-block text-danger"></p>
                         </div>
+                        <!--
                         <div class="control-group">
+                            <h6>Thumbnail</h6>
                             <input style="border-radius: 7px" name ="file" type="file" class="form-control" id="thumbnail" placeholder="thumbnail" required="required" data-validation-required-message="Please Select your Thumbanail" />
                             <p class="help-block text-danger"></p>
                         </div>
+                        -->
                         <div>
                             <button style="border-radius: 7px" class="btn btn-outline-primary" type="submit" id="sendMessageButton">Upload</button>
+                            <h2></h2>
                         </div>
                     </form>
                 </div>

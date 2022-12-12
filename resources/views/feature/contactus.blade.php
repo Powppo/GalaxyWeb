@@ -46,17 +46,17 @@
             <div class="col-sm-4 text-center mb-3">
                 <i class="fa fa-2x fa-map-marker-alt mb-3 text-primary"></i>
                 <h4 class="font-weight-bold">Address</h4>
-                <p>123 Street, New York, USA</p>
+                <p>+62 Indonesia</p>
             </div>
             <div class="col-sm-4 text-center mb-3">
                 <i class="fa fa-2x fa-phone-alt mb-3 text-primary"></i>
                 <h4 class="font-weight-bold">Phone</h4>
-                <p>+012 345 6789</p>
+                <p>+62 82225679463</p>
             </div>
             <div class="col-sm-4 text-center mb-3">
                 <i class="far fa-2x fa-envelope mb-3 text-primary"></i>
                 <h4 class="font-weight-bold">Email</h4>
-                <p>info@example.com</p>
+                <p>galaxygym@gmail.com</p>
             </div>
         </div>
         <div class="row">

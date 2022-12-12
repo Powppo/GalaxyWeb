@@ -6,6 +6,7 @@ use Illuminate\Http\Request;
 use App\Models\User;
 use App\Models\contactus;
 use App\Models\Upload;
+use App\Models\Exchange;
 use Illuminate\support\Facades\Auth;
 use Illuminate\support\Facades\DB;
 
@@ -55,9 +56,9 @@ class FeatureController extends Controller
         $rev->user_id = Auth::id();
         if ($rev->save())
         {
-            return redirect('contact')->with('status', 'Feedback Accepted');
+            return redirect('home/contact')->with('status', 'Feedback Accepted');
         } else {
-            return redirect('contact')->with('status', 'Feedback Denied');
+            return redirect('home/contact')->with('status', 'Feedback Denied');
 
         }
     }
@@ -66,23 +67,37 @@ class FeatureController extends Controller
         $request->validate([
             'code'=>'required',
             'link'=>'required',
-            'file'=>'required',
         ]);
 
         $upld = new upload;
+        $val = 100;
         $upld->code = $request->code;
         $upld->link = $request->link;
-        $upld->file = $request->file;
+        $upld->get_points = $request->get_points+$val;
         $upld->user_id = Auth::id();
         if ($upld->save())
         {
-            return redirect('upload')->with('status', 'Upload Succeded');
+            return redirect('home/upload')->with('status', 'Upload Succeded');
         } else {
-            return redirect('upload')->with('status', 'Upload Succeded');
-
+            return redirect('home/upload')->with('status', 'Upload Failed');
         }
     }
+    protected function storeExchange(Request $request){
+        $request->validate([
+            'item'=>'required',
+        ]);
 
+        $exc = new exchange;
+        $exc->item = $request->item;
+        $exc->user_id = Auth::id();
+        if ($exc->save())
+        {
+            return redirect('home/expoint')->with('status', 'Select Succeded');
+        } else {
+            return redirect('home/expoint')->with('status', 'Select Failed');
+        }
+    }
+    
     public function myprofile($id)
     {
         $user = User::findorfail($id);
@@ -100,8 +115,10 @@ class FeatureController extends Controller
         {
             $edit = User::findorfail($id);
             $edit->update($request->all());
-            if ($edit->save())
+            if ($edit->save() && $request->hasFile('image'))
             {
+                $request->image->storeAs('uploads/images',$filename,'public');
+                Auth()->user()->update(['image'=>$filename]);
                 return redirect('index')->with('status', 'Update Success');
             } else {
                 return redirect('index')->with('status', 'Update Denied');

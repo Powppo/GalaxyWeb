@@ -56,7 +56,9 @@
                                             <h4 class="text-primary font-weight-bold">Videos Link</h4>
                                             <hr>
                                             @foreach ($tam as $item)
-                                            <p class="m-0 text-black">From User ID : {{$item['user_id']}}--{{$item['link']}}</p>
+                                            <h6 class="m-0 text-black">Category: {{$item['code']}}</h6>
+                                            <h6 class="m-0 text-black">From User ID: {{$item['user_id']}}</h6>
+                                            <p class="m-0 text-black">{{$item['link']}}</p>
                                             <br>
                                             @endforeach
                                     <div class="card-body">

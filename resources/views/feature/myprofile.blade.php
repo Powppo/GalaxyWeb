@@ -17,6 +17,15 @@
           <div class="card-body">
             <div class="row">
               <div class="col-sm-3">
+                <p class="mb-0 text-primary font-weight-bold">ID</p>
+              </div>
+              <div class="col-sm-9">
+                <p class="mb-0" value="{{ $user->id }}">{{$user['id']}}</p>
+              </div>
+            </div>
+            <hr>
+            <div class="row">
+              <div class="col-sm-3">
                 <p class="mb-0 text-primary font-weight-bold">Name</p>
               </div>
               <div class="col-sm-9">
@@ -50,7 +59,7 @@
                 <p class="mb-0" value="{{ $user->email }}"> {{$user['email']}}</p>
               </div>
             </div>
-        </div>
+        
         <br>
     <div class="row mb-0" >
         <div class="col-md-8 offset-md-2">

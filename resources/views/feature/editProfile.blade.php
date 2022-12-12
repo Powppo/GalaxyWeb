@@ -18,21 +18,34 @@
                       <!--Name-->
                         <h6 style="margin-bottom: 5px">Name Edit</h6>
                       <div class="wrap-input100 validate-input" style="margin-bottom: 15px">
-                        <input  style="border-radius: 7px" class="form-control" id="name" type="name" class="form-control" name="name" value="{{ $edit->name }}" autofocus>
+                        <input  style="border-radius: 7px" class="form-control" id="name" type="name" name="name" value="{{ $edit->name }}" autofocus>
                       </div>
                     
                       <!--Location-->
                       <h6 style="margin-bottom: 5px">Address Edit</h6>
                       <div class="wrap-input100 validate-input" style="margin-bottom: 15px">
-                        <input style="border-radius: 7px" class="form-control" id="address" type="address" class="form-control" name="address" value="{{ $edit->address }}" autofocus>
+                        <input style="border-radius: 7px" class="form-control" id="address" type="address" name="address" value="{{ $edit->address }}" autofocus>
                       </div>
                     
                       <!--Contact-->
                       <h6 style="margin-bottom: 5px">Contact Edit</h6>
                       <div class="wrap-input100 validate-input" style="margin-bottom: 15px">
-                        <input style="border-radius: 7px" class="form-control" id="phoneNumber" type="contact" class="form-control" name="phoneNumber" value="{{ $edit->contact }}" autofocus>
+                        <input style="border-radius: 7px" class="form-control" id="phoneNumber" type="contact"  name="phoneNumber" value="{{ $edit->contact }}" autofocus>
                       </div>
                     
+                      <!--
+                        Add Profile Picture-->
+                      <!--<h6 style="margin-bottom: 5px">Add Profile Picture</h6>
+                      <div class="wrap-input100 validate-input" style="margin-bottom: 15px">
+                            <input style="border-radius: 7px" type="file" id="image" type="fizle" class="form-control" name="image">
+                      
+                            @error('image')
+                                <span class="invalid-feedback" role="alert">
+                                    <strong>{{ $message }}</strong>
+                                </span>
+                            @enderror
+                        </div>
+                      -->
                       <!--Button-->
                       <div style="margin-bottom: 7px">
                         <button onclick="return confirm('Apply Profile Customization?');" class="btn btn-outline-primary" type="submit" id="edit" style="border-radius: 7px">Apply</button>

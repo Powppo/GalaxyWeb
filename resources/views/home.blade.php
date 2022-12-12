@@ -52,7 +52,7 @@
                     </div>
                     <div class="col-sm-7">
                         <h4 class="font-weight-bold">Videos Instruction</h4>
-                        <p>Sit lorem ipsum et diam elitr est dolor sed duo. Guberg sea et et lorem dolor sed est sit invidunt, dolore tempor diam ipsum takima  erat tempor</p>
+                        <p>Register and Watch Video Freely</p>
                     </div>
                 </div>
             </div>
@@ -63,8 +63,8 @@
                         <i class="flaticon-training"></i>
                     </div>
                     <div class="col-sm-7">
-                        <h4 class="font-weight-bold">Training Calendar</h4>
-                        <p>Sit lorem ipsum et diam elitr est dolor sed duo. Guberg sea et et lorem dolor sed est sit invidunt, dolore tempor diam ipsum takima  erat tempor</p>
+                        <h4 class="font-weight-bold">Exchange your Points</h4>
+                        <p>Upload video link through our Website, get points, and exchange it with desired items in our GYM.</p>
                     </div>
                 </div>
             </div>
@@ -76,7 +76,7 @@
                     </div>
                     <div class="col-sm-7">
                         <h4 class="font-weight-bold">Free Apps & WiFi</h4>
-                        <p>Sit lorem ipsum et diam elitr est dolor sed duo. Guberg sea et et lorem dolor sed est sit invidunt, dolore tempor diam ipsum takima  erat tempor</p>
+                        <p>Get free Wifi in our GYM and Sign up as Advance / Beginner user to access the website.</p>
                     </div>
                 </div>
             </div>
@@ -88,7 +88,7 @@
                     </div>
                     <div class="col-sm-7">
                         <h4 class="font-weight-bold">Community Support</h4>
-                        <p>Sit lorem ipsum et diam elitr est dolor sed duo. Guberg sea et et lorem dolor sed est sit invidunt, dolore tempor diam ipsum takima  erat tempor</p>
+                        <p>supportive Community with Advantegous Feature for both parties.</p>
                     </div>
                 </div>
             </div>
@@ -104,7 +104,7 @@
                     <i class="flaticon-training display-3 text-primary mr-3"></i>
                     <div class="">
                         <h2 class="text-white mb-3">Progression</h2>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed eu suscipit orci velit id libero
+                        <p>The principle of progression is the idea that as your body adapts to your exercise routine, you have to increase the intensity to continue to see enhanced fitness. This can mean gradually increasing the weight, duration, or intensity of your weight training in order to see growth.
                         </p>
                     </div>
                 </div>
@@ -114,7 +114,7 @@
                     <i class="flaticon-weightlifting display-3 text-secondary mr-3"></i>
                     <div class="">
                         <h2 class="text-white mb-3">Workout</h2>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed eu suscipit orci velit id libero
+                        <p>GYM practice and exercise to test or improve your fitness for athletic competition, ability, or performance.
                         </p>
                     </div>
                 </div>
@@ -124,7 +124,7 @@
                     <i class="flaticon-treadmill display-3 text-primary mr-3"></i>
                     <div class="">
                         <h2 class="text-white mb-3">Nutrition</h2>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed eu suscipit orci velit id libero
+                        <p>The taking in and use of food and other nourishing material by the body.
                         </p>
                     </div>
                 </div>
