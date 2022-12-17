@@ -74,17 +74,19 @@
                                                                         <button onclick="return confirm('Are you sure to select this item?');" style="border-radius: 7px; font-size: 12px; margin-left: 10px" class="btn btn-outline-primary" type="submit" id="sendMessageButton">Select</button>
                                                                     </div>
                                                                 </div>
-
+                                                        </form>
+                                                        <form method="POST" action="{{ route('storeExchange') }}">
+                                                            @csrf
                                                                 <div class="text-center mb-5">
                                                                     <div class="d-inline-flex">
                                                                         <p class="text-primary font-weight-bold">Membership</p>
                                                                         <p class="m-0 text-black px-2">/</p>
                                                                         <p class="m-0 text-black">1500 pts</p>
-                                                                        <input style="border-radius: 7px" name ="item" type="hidden" value="Membership" class="form-control" id="item"/>
+                                                                        <input style="border-radius: 7px" name ="item" type="hidden" value="Membership" class="form-control" id="item2"/>
                                                                         <p class="help-block text-danger"></p>
                                                                     </div>
                                                                     <div>
-                                                                        <button style="border-radius: 7px; font-size: 12px; margin-left: 10px" class="btn btn-outline-primary" type="submit" id="sendMessageButton">Select</button>
+                                                                        <button onclick="return confirm('Are you sure to select this item?');" style="border-radius: 7px; font-size: 12px; margin-left: 10px" class="btn btn-outline-primary" type="submit" id="sendMessageButton">Select</button>
                                                                     </div>
                                                                 </div>
                                                             </div>
