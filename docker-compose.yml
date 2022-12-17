@@ -7,8 +7,8 @@ networks:
 services:
   app:
     build:
-      context: .
-      dockerfile: .Dockerfile/nginx.dockerfile
+      context: ./Dockerfile
+      dockerfile: nginx.dockerfile
       args:
         - UID=${UID:-1000}
         - GID=${GID:-1000}
@@ -42,8 +42,8 @@ services:
 
   php:
     build:
-      context: .
-      dockerfile: .Dockerfile/php.dockerfile
+      context: ./Dockerfile
+      dockerfile: php.dockerfile
       args:
         - UID=${UID:-1000}
         - GID=${GID:-1000}
@@ -64,8 +64,8 @@ services:
 
   composer:
     build:
-      context: .
-      dockerfile: .Dockerfile/php.dockerfile
+      context: ./Dockerfile
+      dockerfile: php.dockerfile
       args:
         - UID=${UID:-1000}
         - GID=${GID:-1000}
@@ -92,8 +92,8 @@ services:
 
   artisan:
     build:
-      context: .
-      dockerfile: .Dockerfile/php.dockerfile
+      context: ./Dockerfile
+      dockerfile: php.dockerfile
       args:
         - UID=${UID:-1000}
         - GID=${GID:-1000}
